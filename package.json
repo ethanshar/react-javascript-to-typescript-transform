@@ -22,10 +22,16 @@
             ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
         },
         "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-        "moduleFileExtensions": ["ts", "js"]
+        "moduleFileExtensions": [
+            "ts",
+            "js"
+        ]
     },
     "lint-staged": {
-        "*.{js,json,css,md,ts,tsx}": ["node_modules/.bin/prettier --write", "git add"]
+        "*.{js,json,css,md,ts,tsx}": [
+            "node_modules/.bin/prettier --write",
+            "git add"
+        ]
     },
     "bin": "dist/cli.js",
     "author": "Mohsen Azimi <me@azimi.me>",
